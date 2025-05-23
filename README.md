@@ -1,6 +1,6 @@
 # Chainlit Powered Memory Streaming Agent 🤖
 
-<p align="center">
+<p align="left">
   <a href="https://github.com/waheed444/chainlit-memory-stream-agent">
     <img src="https://img.shields.io/github/stars/waheed444/chainlit-memory-stream-agent?style=social" alt="GitHub stars">
   </a>
@@ -28,16 +28,16 @@ This project is an **AI assistant** built using **Chainlit** and the **OpenAI Ag
 
 Before running this project, ensure you have the following tools, libraries, and API keys properly configured:
 
-| Tool / Library        | Description                                                                 |
-|-----------------------|-----------------------------------------------------------------------------|
-| 🐍 Python 3.9+         | Required for running the application and libraries                         |
-| 🧬 Chainlit            | Framework for building conversational UIs with LLMs                         |
-| 🧠 OpenAI Agent SDK    | Enables agent orchestration and streaming capabilities                     |
-| 🌐 Git                 | Version control for cloning and managing the project repository            |
-| 🔑 Google Gemini API   | [Get API Key](https://makersuite.google.com/app/apikey) for Gemini models  |
-| 🔑 OpenAI API Key      | [Get API Key](https://platform.openai.com/account/api-keys) for streaming  |
-| 📦 dotenv              | For managing environment variables securely                                |
-| 🧪  VS Code   | Recommended code editor for development                                    |
+| Tool / Library          | Description                                                                 
+|--------------------------|-----------------------------------------------------------------------------
+| 🐍 Python 3.9+           | Required for running the application and libraries                         
+| 🧬 Chainlit              | Framework for building conversational UIs with LLMs                         
+| 🧠 OpenAI Agent SDK      | Enables agent orchestration and streaming capabilities                     
+| 🌐 Git                   | Version control for cloning and managing the project repository            
+| 🔑 Google Gemini API     | [Get API Key](https://makersuite.google.com/app/apikey) for Gemini models  
+| 🔑 OpenAI API Key        | [Get API Key](https://platform.openai.com/account/api-keys) for streaming  
+| 📦 dotenv                | For managing environment variables securely                                
+| 🧪  VS Code   | Recommended code editor for development                                    
 
 ---
 
@@ -106,13 +106,13 @@ Start the Chat UI: Once Chainlit is running, open the local URL provided in your
 
 Ask questions like:
 
-```kotlin
+```bash
 Who was the founder of Pakistan?
 Summarize the history of Python in 3 lines.
 What’s the latest in AI this year?
 ```
 
-Enjoy token-by-token responses with context-aware answers based on your previous messages.
+Enjoy token-by-token responses with context-aware answers based on your memory/previous messages.
 
 
 💡 You can customize the agent's behavior, memory strategy, or switch between Gemini and OpenAI models by modifying the `app.py` and `stream.py` files.
@@ -158,3 +158,5 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 </p>
 
 ---
+
+
