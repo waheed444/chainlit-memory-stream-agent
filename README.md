@@ -12,15 +12,6 @@
   <a href="https://docs.chainlit.io">
     <img src="https://img.shields.io/badge/Built%20with-Chainlit-764abc.svg" alt="Chainlit">
   </a>
-  <a href="https://github.com/openai/openai-agents">
-    <img src="https://img.shields.io/badge/OpenAI-Agent%20SDK-brightgreen.svg" alt="OpenAI Agent SDK">
-  </a>
-  <a href="https://git-scm.com/">
-    <img src="https://img.shields.io/badge/version-control-Git-orange.svg" alt="Git">
-  </a>
-  <a href="https://makersuite.google.com/app/apikey">
-    <img src="https://img.shields.io/badge/API-Gemini%20Key-yellow.svg" alt="Gemini API Key">
-  </a>
   <a href="https://github.com/waheed444/chainlit-memory-stream-agent/fork">
     <img src="https://img.shields.io/badge/Contribute-Fork%20repo-blue.svg" alt="Fork">
   </a>
@@ -32,11 +23,6 @@
 
 
 This project is an **AI assistant** built using **Chainlit** and the **OpenAI Agent SDK**, powered by **Google Gemini models**. It supports real-time **streaming** responses (just like ChatGPT) and remembers previous messages(history/memory) to keep the conversation flowing naturally. You can use it to build your own smart and responsive chatbot.
-
-on.
-
-
-
 
 ##  Prerequisites ✅
 
