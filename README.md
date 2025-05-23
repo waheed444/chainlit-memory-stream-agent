@@ -1,4 +1,4 @@
-# Chainlit Memory Stream Agent: Your Gemini-Powered AI Chatbot 🤖💬
+# Chainlit Powered Memory Streaming Agent 🤖
 
 <p align="center">
   <a href="https://github.com/waheed444/chainlit-memory-stream-agent">
@@ -31,7 +31,9 @@
 
 
 
-A powerful AI assistant built with **Chainlit** and the **OpenAI Agent SDK**, leveraging the capabilities of **Google Gemini models**. This project boasts **real-time streaming responses** and maintains **persistent chat history**, providing a seamless ChatGPT-like experience within your own custom AI application.
+This project is an **AI assistant** built using **Chainlit** and the **OpenAI Agent SDK**, powered by **Google Gemini models**. It supports real-time **streaming** responses (just like ChatGPT) and remembers previous messages(history/memory) to keep the conversation flowing naturally. You can use it to build your own smart and responsive chatbot.
+
+on.
 
 
 
