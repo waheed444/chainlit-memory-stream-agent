@@ -1,31 +1,30 @@
-import os
-from agents import Agent , Runner , OpenAIChatCompletionsModel , AsyncOpenAI , set_tracing_disabled
-from  dotenv import load_dotenv
-import asyncio
+from agents import Agent , Runner ,OpenAIChatCompletionsModel ,AsyncOpenAI ,set_tracing_disabled
+from dotenv import load_dotenv
+import os , asyncio
 
 load_dotenv()
 
-# Set Provider, Base URL and API Key
 provider = AsyncOpenAI(
-        api_key = os.getenv("GIMINI_API_KEY"),
-        base_url="https://generativelanguage.googleapis.com/v1beta/openai/"
+    api_key=os.getenv("GIMINI_API_KEY"),
+    base_url="https://generativelanguage.googleapis.com/v1beta/openai/"
+
 )
 
-# Creating model and configure model
-model = OpenAIChatCompletionsModel(
-        model = "gemini-2.0-flash-exp",
-        openai_client = provider     
+set_tracing_disabled(True)
+model= OpenAIChatCompletionsModel(
+    model = "gemini-2.0-flash-exp",
+    openai_client=provider
 )
-async def Aiagent(user_input):                    # Create async func()
-    # Creating Agent
-    MyAgent = Agent(name = "Assistant", instructions = "You will response to the user query.", model = model)
-    # Running Agent
-    response = await Runner.run(starting_agent=MyAgent, input=user_input)
 
-    return(response.final_output)     # Generate Response
+async def MyAgent():
+    agent = Agent(
+        name="Assistant",
+        instructions="you will respond to user query",
+        model=model
+    )
 
-result = asyncio.run(Aiagent("Hello, tell me about Pakistan in 3 lines?"))
-print(result)                  # Run async func()
+    # response = await Runner.run(agent,user_query)
+    return agent
 
-# Disable the OpenAPI Tracing because we use Gemini API
-set_tracing_disabled(disabled = True)
+
+# print(asyncio.run(main("tell me about pakistan in 2 lines")))
